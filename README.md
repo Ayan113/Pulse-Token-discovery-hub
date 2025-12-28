@@ -1,52 +1,87 @@
-# Token Discovery Hub
+Pulse — Token Discovery Hub
 
 A high-performance, real-time token market dashboard inspired by modern crypto trading platforms.
+Built with production-grade architecture, smooth UI interactions, and real-time data simulations.
 
-## 🔗 Live Demo
+🔗 Live Demo
+
 👉 https://pulse-token-discovery-hub.vercel.app/
 
-## 🎥 Demo Video
-👉 https://youtube.com/YOUR_VIDEO_LINK
+🎥 Demo Video
 
-## 🚀 Features
+👉 https://youtu.be/vNY3RqF_yFA
 
-- Real-time token price updates (WebSocket mock)
-- Token categories:
-  - New Pairs
-  - Final Stretch
-  - Migrated
-- Interactive data table
-  - Sorting
-  - Hover states
-  - Tooltips & popovers
-  - Modal-based details view
-- Smooth price-change color transitions
-- Loading states:
-  - Skeleton loaders
-  - Shimmer effects
-  - Error boundaries
-- Fully responsive (320px → desktop)
-- Pixel-perfect UI aligned with production trading platforms
+🚀 Key Features
 
-## 🧠 Technical Architecture
+Real-time token price updates (Mock WebSocket engine)
 
-- **Frontend**: React + TypeScript
-- **Bundler**: Vite
-- **Styling**: Tailwind CSS + shadcn/ui
-- **State Management**: Redux Toolkit
-- **Data Fetching**: React Query
-- **Real-time Updates**: Mock WebSocket server
-- **Error Handling**: Global error boundaries
-- **Performance**:
-  - Memoized components
-  - No layout shifts
-  - <100ms interactions
+Token discovery categories
 
-## 📁 Project Structure
+New Pairs
+
+Final Stretch
+
+Migrated Tokens
+
+Advanced interactive data table
+
+Column sorting
+
+Hover & focus states
+
+Tooltips and contextual popovers
+
+Modal-based detailed token view
+
+Smooth price-change animations
+
+Color-coded transitions for gains/losses
+
+Robust loading & error handling
+
+Skeleton loaders
+
+Shimmer effects
+
+Global error boundaries
+
+Fully responsive design
+
+Optimized for 320px → large desktop
+
+Pixel-perfect UI
+
+Inspired by real-world crypto trading platforms
+
+🧠 Technical Architecture
+
+Frontend: React + TypeScript
+
+Build Tool: Vite
+
+Styling: Tailwind CSS + shadcn/ui
+
+State Management: Redux Toolkit
+
+Server State: React Query
+
+Real-time Layer: Mock WebSocket Server
+
+Error Handling: Centralized error boundaries
+
+Performance Optimizations
+
+Memoized components
+
+Zero layout shifts (No CLS)
+
+Sub-100ms UI interactions
+
+📁 Project Structure
 src/
 ├─ components/
-│ ├─ trading/
-│ └─ ui/
+│  ├─ trading/
+│  └─ ui/
 ├─ hooks/
 ├─ services/
 ├─ store/
@@ -54,45 +89,44 @@ src/
 ├─ pages/
 └─ lib/
 
-
-## 🛠️ Local Setup
-
-```bash
+🛠️ Local Development Setup
 git clone https://github.com/Ayan113/Pulse-Token-discovery-hub
 cd token-discovery-hub
 npm install
 npm run dev
 
-📈 Performance
+📱 Responsive Layout
 
-Lighthouse score ≥ 90 (mobile & desktop)
+The application is fully responsive and optimized across devices.
 
-No CLS
+Mobile (320px)
+
+Tablet (768px)
+
+Desktop (1024px+)
+
+📈 Performance & Quality
+
+Lighthouse Score: ≥ 90 (Mobile & Desktop)
+
+No Cumulative Layout Shift
 
 Optimized re-renders
 
-📌 Notes
+Scalable and maintainable architecture
 
-This project was built with a focus on:
+📌 Project Focus
 
-Clean architecture
+Pulse was built with a strong emphasis on:
 
-Reusability
+Clean and scalable architecture
 
-Production-grade UI quality
+Reusable, composable components
+
+Production-grade UI and UX quality
 
 Recruiter-ready code standards
-=======
 
-## 📱 Responsive Layout
+Real-world performance considerations
 
-The application is fully responsive and optimized for all screen sizes.
-
-### Mobile (320px)
-![Mobile 320px](screenshots\phone-320.png)
-
-### Tablet (768px)
-![Tablet 768px](screenshots\tablet-768.png)
-
-### Desktop (1024px+)
-![Desktop](screenshots\desktop-1024.png)
+⭐ If you like this project, consider giving it a star!
