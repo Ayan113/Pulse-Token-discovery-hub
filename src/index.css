@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Axiom Trade Design System - Dark Trading Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Core Background Colors - Deep Navy/Black */
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    /* Card Surfaces - Elevated layers */
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --card-elevated: 222 47% 10%;
+
+    /* Popover/Modal */
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Axiom Blue/Purple accent */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary */
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted */
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 55%;
+
+    /* Accent */
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Trading Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 142 71% 95%;
+    --success-muted: 142 71% 25%;
+    
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 84% 95%;
+    --danger-muted: 0 84% 25%;
+
+    --warning: 45 93% 47%;
+    --warning-foreground: 45 93% 10%;
+
+    /* Destructive */
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders & Inputs */
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Custom Trading Tokens */
+    --table-row-hover: 217 32% 12%;
+    --progress-track: 217 32% 15%;
+    --badge-bg: 217 32% 20%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(270, 91%, 60%));
+    --gradient-success: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(142, 71%, 35%));
+    --gradient-danger: linear-gradient(135deg, hsl(0, 84%, 60%), hsl(0, 84%, 50%));
+    --gradient-card: linear-gradient(180deg, hsl(222, 47%, 10%), hsl(222, 47%, 8%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 8px 32px hsl(0 0% 0% / 0.4);
+
+    /* Animation Timings */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Already dark by default */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply antialiased scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full hover:bg-muted-foreground/50;
+  }
+
+  /* 3D Perspective */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50;
+  }
+
+  .glass-strong {
+    @apply bg-card/80 backdrop-blur-2xl border border-border/30;
+  }
+}
+
+@layer utilities {
+  /* Shimmer animation for loading states */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--secondary)) 0%,
+      hsl(var(--muted)) 50%,
+      hsl(var(--secondary)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  /* Price flash animations */
+  .price-flash-up {
+    animation: flashUp 0.6s ease-out;
+  }
+
+  .price-flash-down {
+    animation: flashDown 0.6s ease-out;
+  }
+
+  @keyframes flashUp {
+    0% {
+      background-color: hsl(var(--success) / 0.3);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  @keyframes flashDown {
+    0% {
+      background-color: hsl(var(--danger) / 0.3);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  /* Pulse animation for live indicators */
+  .pulse-live {
+    animation: pulseLive 2s infinite;
+  }
+
+  @keyframes pulseLive {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  /* Glow effect */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Slide in from right */
+  .slide-in-right {
+    animation: slideInRight 0.3s ease-out;
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Monospace font utility */
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Progress bar gradient */
+  .progress-gradient {
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--success)));
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-200;
+  }
+
+  .card-hover:hover {
+    @apply bg-[hsl(var(--table-row-hover))];
+  }
+
+  /* Text gradient */
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* No scrollbar utility */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
