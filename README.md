@@ -3,6 +3,24 @@ Pulse — Token Discovery Hub
 A high-performance, real-time token market dashboard inspired by modern crypto trading platforms.
 Built with production-grade architecture, smooth UI interactions, and real-time data simulations.
 
+## 🖼️ Product Screenshots:
+
+### 🏠 Homepage
+![Homepage](screenshots/homepage.png)
+
+### 📊 Trading Page
+![Trading Page](screenshots/tokenpage.png)
+
+### 🖥️ Desktop View (1024px)
+![Desktop View](screenshots/desktop-1024.png)
+
+### 📱 Tablet View (768px)
+![Tablet View](screenshots/tablet-768.png)
+
+### 📲 Mobile View (320px)
+![Mobile View](screenshots/phone-320.png)
+
+
 🔗 Live Demo
 
 👉 https://pulse-token-discovery-hub.vercel.app/
