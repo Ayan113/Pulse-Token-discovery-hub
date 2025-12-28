@@ -3,7 +3,7 @@
 A high-performance, real-time token market dashboard inspired by modern crypto trading platforms.
 
 ## 🔗 Live Demo
-👉 https://YOUR_VERCEL_URL.vercel.app
+👉 https://pulse-token-discovery-hub.vercel.app/
 
 ## 🎥 Demo Video
 👉 https://youtube.com/YOUR_VIDEO_LINK
@@ -58,7 +58,7 @@ src/
 ## 🛠️ Local Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/token-discovery-hub.git
+git clone https://github.com/Ayan113/Pulse-Token-discovery-hub
 cd token-discovery-hub
 npm install
 npm run dev
