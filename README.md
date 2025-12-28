@@ -82,3 +82,17 @@ Reusability
 Production-grade UI quality
 
 Recruiter-ready code standards
+=======
+
+## 📱 Responsive Layout
+
+The application is fully responsive and optimized for all screen sizes.
+
+### Mobile (320px)
+![Mobile 320px](screenshots\phone-320.png)
+
+### Tablet (768px)
+![Tablet 768px](screenshots\tablet-768.png)
+
+### Desktop (1024px+)
+![Desktop](screenshots\desktop-1024.png)
