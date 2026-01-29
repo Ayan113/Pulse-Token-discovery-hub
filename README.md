@@ -1,9 +1,28 @@
-Pulse — Token Discovery Hub
+# Pulse — Token Discovery Hub 🚀
 
-A high-performance, real-time token market dashboard inspired by modern crypto trading platforms.
-Built with production-grade architecture, smooth UI interactions, and real-time data simulations.
+A high-performance, real-time token market dashboard inspired by modern crypto trading platforms. Built with production-grade architecture, smooth UI interactions, and real-time data simulations.
 
-## 🖼️ Product Screenshots:
+🔗 **[Live Demo](https://pulse-token-discovery-hub.vercel.app)**
+
+## ✨ Features
+
+- 📊 **Real-time Market Data**: Pulse-dynamic updates for token prices and market movements.
+- 🔍 **Token Discovery**: Easily find and track new and trending tokens.
+- 📈 **Interactive Charts**: Visual representation of market trends.
+- 📱 **Fully Responsive**: Optimized for Mobile, Tablet, and Desktop views.
+- 🎨 **Modern UI/UX**: Built with Radix UI and Tailwind CSS for a premium trading experience.
+
+## 🛠️ Technology Stack
+
+- **Framework**: [React 18](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/) / [Shadcn UI](https://ui.shadcn.com/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+
+## 🖼️ Product Screenshots
 
 ### 🏠 Homepage
 ![Homepage](screenshots/homepage.png)
@@ -20,131 +39,45 @@ Built with production-grade architecture, smooth UI interactions, and real-time 
 ### 📲 Mobile View (320px)
 ![Mobile View](screenshots/phone-320.png)
 
+## 🚀 Getting Started
 
-🔗 Live Demo
+### Prerequisites
 
-👉 https://pulse-token-discovery-hub.vercel.app/
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Bun](https://bun.sh/) (Optional, but recommended for faster development)
 
-🎥 Demo Video
+### Installation
 
-👉 https://youtu.be/vNY3RqF_yFA
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ayan113/Pulse-Token-discovery-hub.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Pulse-Token-discovery-hub
+   ```
+3. Install dependencies:
+   ```bash
+   bun install
+   # or
+   npm install
+   ```
 
-🚀 Key Features
+### Running Locally
 
-Real-time token price updates (Mock WebSocket engine)
-
-Token discovery categories
-
-New Pairs
-
-Final Stretch
-
-Migrated Tokens
-
-Advanced interactive data table
-
-Column sorting
-
-Hover & focus states
-
-Tooltips and contextual popovers
-
-Modal-based detailed token view
-
-Smooth price-change animations
-
-Color-coded transitions for gains/losses
-
-Robust loading & error handling
-
-Skeleton loaders
-
-Shimmer effects
-
-Global error boundaries
-
-Fully responsive design
-
-Optimized for 320px → large desktop
-
-Pixel-perfect UI
-
-Inspired by real-world crypto trading platforms
-
-🧠 Technical Architecture
-
-Frontend: React + TypeScript
-
-Build Tool: Vite
-
-Styling: Tailwind CSS + shadcn/ui
-
-State Management: Redux Toolkit
-
-Server State: React Query
-
-Real-time Layer: Mock WebSocket Server
-
-Error Handling: Centralized error boundaries
-
-Performance Optimizations
-
-Memoized components
-
-Zero layout shifts (No CLS)
-
-Sub-100ms UI interactions
-
-📁 Project Structure
-src/
-├─ components/
-│  ├─ trading/
-│  └─ ui/
-├─ hooks/
-├─ services/
-├─ store/
-├─ types/
-├─ pages/
-└─ lib/
-
-🛠️ Local Development Setup
-git clone https://github.com/Ayan113/Pulse-Token-discovery-hub
-cd token-discovery-hub
-npm install
+To start the development server:
+```bash
+bun dev
+# or
 npm run dev
+```
 
-📱 Responsive Layout
+The application will be available at `http://localhost:5173`.
 
-The application is fully responsive and optimized across devices.
+## 📦 Deployment
 
-Mobile (320px)
+The project is configured for easy deployment on [Vercel](https://vercel.com). Just push your changes and it will auto-deploy.
 
-Tablet (768px)
+---
 
-Desktop (1024px+)
-
-📈 Performance & Quality
-
-Lighthouse Score: ≥ 90 (Mobile & Desktop)
-
-No Cumulative Layout Shift
-
-Optimized re-renders
-
-Scalable and maintainable architecture
-
-📌 Project Focus
-
-Pulse was built with a strong emphasis on:
-
-Clean and scalable architecture
-
-Reusable, composable components
-
-Production-grade UI and UX quality
-
-Recruiter-ready code standards
-
-Real-world performance considerations
-
-⭐ If you like this project, consider giving it a star!
+Built with ❤️ by [Ayan](https://github.com/Ayan113)
